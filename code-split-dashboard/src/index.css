@@ -1,0 +1,50 @@
+:root {
+    --bg: #fff;
+    --muted: #6b7280;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Inter, system-ui, Arial;
+    background: var(--bg);
+    color: #111;
+}
+.app {
+    max-width: 1000px;
+    margin: 32px auto;
+    padding: 20px;
+}
+.layout {
+    display: flex;
+    gap: 16px;
+}
+.nav {
+    width: 200px;
+    border: 1px solid #e5e7eb;
+    padding: 12px;
+    border-radius: 8px;
+}
+.content {
+    flex: 1;
+    border: 1px solid #e5e7eb;
+    padding: 12px;
+    border-radius: 8px;
+    min-height: 300px;
+}
+button {
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background: #fff;
+    cursor: pointer;
+}
+button.active {
+    background: #111827;
+    color: #fff;
+}
+.small-muted {
+    color: var(--muted);
+    font-size: 13px;
+}
